@@ -1,0 +1,121 @@
+{
+  "ru": {
+    "translation": {
+      "common": {
+        "title": "React auth kit",
+        "buttons": {
+          "login": "Войти",
+          "registration": "Регистрация",
+          "exploreFirst": "Сначала изучить",
+          "approve": "Подтвердить",
+          "forgetPassword": "Забыли пароль?",
+          "retrySending": "Повторить отправку",
+          "changeEmail": "Изменить email",
+          "send": "Отправить",
+          "disable": "Отключить",
+          "back": "Назад",
+          "cancel": "Отменить",
+          "save": "Сохранить",
+          "cancellation": "Отмена"
+        },
+        "fields": {
+          "link": "Ссылка",
+          "username": "Имя пользователя",
+          "password": "Пароль",
+          "confirmationPassword": "Подтверждение пароля",
+          "otp": "Код подтверждения",
+          "currentPassword": "Текущий пароль",
+          "newPassword": "Новый пароль",
+          "description": "Описание",
+          "title": "Название",
+          "email": "Email адрес"
+        },
+        "plural": {
+          "symbolInterval": "(0)[символ];(1)[символа];(2)[символов];"
+        }
+      },
+      "navbar": {
+        "areas": {
+          "home": "Главная станица",
+          "settings": "Настройки",
+          "logout": "Выход"
+        }
+      },
+      "validators": {
+        "baseControlValidators": {
+          "required": "Поле обязательно для заполнения",
+          "passwordsMissMatch": "Введенные пароли не совпадают",
+          "invalidEmail": "E-mail введен некорректно",
+          "onlyLatinField": "Поле может содержать буквы латинского алфавита и символы",
+          "minLength": "Минимум {{length}}"
+        }
+      },
+      "requestErrors": {
+        "INVALID_CREDENTIALS_ERROR": "Неверное имя пользователя или пароль",
+        "EMAIL_EXISTS": "Email уже зарегистрирован",
+        "INVALID_OTP": "Неверный код подтверждения",
+        "EXPIRED_OTP": "Устаревший код подтверждения",
+        "USER_NOT_FOUND": "Пользватель не найден",
+        "NEED_RECAPTCHA": "Пройдите проверку",
+        "INVALID_CURRENT_PASSWORD": "Неверный текущий пароль",
+        "USERNAME_EXISTS": "Имя пользователя уже зарегистрировано"
+      },
+      "components": {
+        "logoutModal": {
+          "title": "Подтвердите выход",
+          "description": "Вы действительно хотите выйти?"
+        },
+        "retryCountdown": {
+          "retryIn": "Код отправлен, повтор через: {{timeLeft}}",
+          "sentTo": "Код подтверждения отправлен на {{recoveryEmail}}"
+        },
+        "retryCountdownWithoutButton": {
+          "retryIn": "Проверочный код ранее уже был отправлен, повтор будет доступен через: {{timeLeft}}"
+        },
+        "codeVerificationInfo": {
+          "emailBeSent": "Мы отправим проверочный код на введенный email адрес."
+        }
+      },
+      "pages": {
+        "home": {
+          "sections": {
+            "mainSection": "Основная группа"
+          }
+        },
+        "settings": {
+          "title": "Настройки",
+          "profileInfo": {
+            "title": "Информация о профиле"
+          },
+          "changeEmail": {
+            "success": "Email успешно изменен",
+            "title": "Изменить email"
+          }
+        },
+        "authorizationForm": {
+          "changePasswordForm": {
+            "title": "Изменить пароль"
+          },
+          "successForm": {
+            "passwordChanged": "Пароль успешно установлен"
+          },
+          "requestRecoveryCodeForm": {
+            "title": "Восстановление"
+          },
+          "setPasswordCode": {
+            "title": "Новый пароль"
+          },
+          "verificationForm": {
+            "title": "Подтверждение"
+          },
+          "registrationForm": {
+            "title": "Регистрация"
+          },
+          "loginForm": {
+            "title": "Войти"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "react-auth-kit",
+  "version": "1.0.0",
+  "description": "React-auth-kit project v.1",
+  "main": "index.js",
+  "scripts": {
+    "start-client": "yarn --cwd ./frontend serve",
+    "build-client": "yarn --cwd ./frontend bundle",
+    "start-server": "yarn --cwd ./backend start",
+    "start": "concurrently \"yarn start-client\" \"yarn start-server\"",
+    "clean-node-modules": "rm -rf ./backend/node_modules && rm -rf ./frontend/node_modules",
+    "reinstall-dependencies": "yarn --cwd ./frontend && yarn --cwd ./backend",
+    "deploy-client": "rm -rf ./backend/public && mv ./frontend/build ./build",
+    "heroku-prebuild": "yarn clean-node-modules && yarn reinstall-dependencies",
+    "build": "yarn build-client && yarn deploy-client"
+  },
+  "author": "bareysho",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}

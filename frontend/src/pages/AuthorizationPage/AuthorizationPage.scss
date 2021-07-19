@@ -1,0 +1,37 @@
+@import "styles/variables";
+
+.authorization {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: $blue;
+
+  .main.row {
+    height: 100%;
+
+    .column {
+      flex-direction: column;
+      display: flex;
+    }
+
+    .column.left {
+      justify-content: flex-end;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .column.right {
+      justify-content: center;
+      background-color: white;
+
+      -webkit-box-shadow: 0 0 16px 4px rgba(34, 80, 80, 0.15);
+      -moz-box-shadow: 0 0 16px 4px rgba(34, 80, 80, 0.15);
+      box-shadow: 0 0 16px 4px rgba(34, 80, 80, 0.15);
+
+      @include device(tablet) {
+        padding: 0 20%;
+      }
+    }
+  }
+}
