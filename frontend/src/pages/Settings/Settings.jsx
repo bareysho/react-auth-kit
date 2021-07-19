@@ -35,6 +35,8 @@ export const Settings = () => {
           <br />
           <br />
           <ChangeEmail />
+          <br />
+          <br />
         </div>
       </div>
     </div>
