@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "React-auth-kit project v.1",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start-client": "yarn --cwd ./frontend serve",
     "build-client": "yarn --cwd ./frontend bundle",
